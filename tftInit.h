@@ -1,5 +1,11 @@
 // referenced https://github.com/adafruit/Adafruit_ILI9341/blob/master/Adafruit_ILI9341.h
 
+#include "Arduino.h"
+
+
+#ifndef __TFTINIT__
+#define __TFTINIT__
+
 
 #define ILI9341_SOFTRESET 0x01
 #define ILI9341_SLEEPIN 0x10
@@ -64,4 +70,4 @@ void drawHorizontalLine(uint16_t color, int x0, int y0, int width, int t);
 void drawVerticalLine(uint16_t color, int x0, int y0, int height, int t);
 
 
-
+#endif
