@@ -1,0 +1,16 @@
+-somehow store states of each tetrimino
+	- store in a predefined array (queue?) where length is divisible by 4
+	
+	- idx = 10*row + col
+		0 <= idx <= 199
+		=> row = floor(idx/10) 
+		=> col = idx % 10
+
+	I-tetrimino start: (183, 184, 185, 186)
+	I-tetrimino descend: (173, 174, 175, 176)
+	
+	
+
+-drop tetrimino; arguments: type, orientation, row
+
+-check for occupied spaces
